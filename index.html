@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Notification</title>
+  <link rel="stylesheet" href="style.css">
+  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css">-->
+  <link rel="stylesheet" href="http://katherinekato.com/misc/themify-icons.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="notification">
+    <a v-on:click="show = !show" class="tooltip-bell">
+      <i class="ti-bell"></i>
+      <transition name="fadeStart">
+        <div v-if="show" class="tooltip">
+          <h3>Notifications</h3>
+          <ul class="notification-list">
+            <li class="notification-item">
+              <div class="img">
+                <img class="user-photo" src="http://via.placeholder.com/48x48" alt="User Photo">
+              </div>
+              <div class="notification-info">
+                <p class="content"><span>Full name</span> left a comment.</p>
+              </div>
+            </li>
+            <li class="notification-item">
+              <div class="img">
+                <img class="user-photo" src="http://via.placeholder.com/48x48" alt="User Photo">
+              </div>
+              <div class="notification-info">
+                <p class="content"><span>Full name</span> left a comment.</p>
+              </div>
+            </li>
+            <li class="notification-item">
+              <div class="img">
+                <img class="user-photo" src="http://via.placeholder.com/48x48" alt="User Photo">
+              </div>
+              <div class="notification-info">
+                <p class="content"><span>Full name</span> left a comment.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </transition>
+    </a>
+  </div>
+</div>
+
+<script src="https://unpkg.com/vue@2.4.2"></script>
+<script src="custom.js"></script>
+</body>
+</html>
