@@ -62,6 +62,10 @@ li {
   border-bottom: 0.01rem solid #ccc; 
 }
 
+li:last-child {
+  border-bottom: none;
+}
+
 .notification-item .img {
   width: auto;
   margin: 0;
